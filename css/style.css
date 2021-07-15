@@ -127,3 +127,42 @@ img {
 .footer-nav {
     display: none;
 }
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+	.main-header,
+	.main-nav {
+		display: flex;
+	}
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+    .top {
+        display: none;
+    }
+    .footer-nav {
+        justify-content: space-between;
+        display: flex;
+    }
+    .footer-nav li {
+        margin: 0 1em;
+    }
+
+
+}
+
+
+@media (min-width: 1024px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
